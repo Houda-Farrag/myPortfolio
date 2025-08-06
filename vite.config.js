@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  root: './src',
+  root: './',
   server: {
     port: 3001, // Set your preferred port
     open: true  // Automatically open browser
@@ -9,12 +9,12 @@ export default defineConfig({
   build: {
     minify: 'terser', // Minify code
     sourcemap: true,  // Generate source maps for production
-    rollupOptions: {
-      output: {
-        assetFileNames: 'assets/[name]-[hash][extname]',
-        chunkFileNames: 'assets/[name]-[hash].js',
-        entryFileNames: 'assets/[name]-[hash].js'
-      }
-    }
+    // rollupOptions: {
+    //   output: {
+    //     assetFileNames: 'assets/[name]-[hash][extname]',
+    //     chunkFileNames: 'assets/[name]-[hash].js',
+    //     entryFileNames: 'assets/[name]-[hash].js'
+    //   }
+    // }
   }
 })
