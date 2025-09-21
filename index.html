@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Portfolio</title>
+    <title>Mahmoud Farrag | Portfolio</title>
     <meta name="description" content="Professional portfolio of [Your Name]">
     <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
     <link rel="stylesheet" type="text/css" href="./main.css">
@@ -17,12 +17,21 @@
 </head>
 
 <body>
+
+    <div class="scroll-to-top" id="scrollToTopBtn" aria-label="Scroll to top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+
+    </div>
     <!-- Navigation -->
     <header class="header">
         <nav class="navbar container">
             <div class="logo">
                 <a href="#home" class="logo-link">
-                    <span class="logo-text">DevFolio</span>
+                    <span class="logo-text">MF</span>
                     <span class="logo-cursor">_</span>
                 </a>
             </div>
@@ -38,9 +47,9 @@
                         Projects</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link"><span class="nav-number">05.</span> Contact</a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a href="#" class="nav-resume-btn">Resume</a>
-                </li> -->
+                <li class="nav-item">
+                    <a href="./assets/Mahmoud Farrag Resume.pdf" class="nav-resume-btn">Resume</a>
+                </li>
             </ul>
 
             <div class="hamburger">
@@ -48,6 +57,9 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
+
+            
+
         </nav>
     </header>
 
@@ -94,7 +106,7 @@
                     <div class="img-container">
                         <!-- <img src="https://media.gettyimages.com/id/1371301907/photo/friendly-young-man-wearing-denim-shirt.jpg?s=612x612&w=gi&k=20&c=0b6uR0xulwbikV4KSEh3nkhZYP3h3aiAiTqijZGRIgo="
                             alt="Mahmoud Farrag" class="profile-img"> -->
-                        <img src="public/unnamed.jpg" alt="Mahmoud Farrag" class="profile-img">
+                        <img src="public/personalPhoto.jpg" alt="Mahmoud Farrag" class="profile-img">
                         <div class="img-border"></div>
                         <div class="img-overlay"></div>
                     </div>
@@ -103,7 +115,7 @@
                 <div class="about-text">
                     <div class="text-content">
                         <p class="intro-text">
-                            Hello! I'm Mahmoud, a <span class="highlight">full-stack developer</span> with a passion for
+                            Hello! I'm Mahmoud, a <span class="highlight">Frontend developer</span> with a passion for
                             creating
                             elegant solutions to complex problems. I specialize in building exceptional
                             digital experiences that are fast, accessible, and visually appealing.
@@ -404,264 +416,8 @@
             </div>
 
             <!-- Projects Grid -->
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card" data-categories="fullstack,react,node">
-                    <div class="project-image">
-                        <img src="https://repository-images.githubusercontent.com/456963513/82528385-a73f-488f-9003-513321283a6b"
-                            alt="E-Commerce Platform">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link" aria-label="View E-Commerce Platform">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <line x1="12" y1="8" x2="12" y2="16"></line>
-                                    <line x1="8" y1="12" x2="16" y2="12"></line>
-                                </svg>
-                            </a>
-                            <a href="#" class="project-link" aria-label="GitHub Repository">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path
-                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                    </path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">Full Stack</span>
-                            <span class="project-date">2023</span>
-                        </div>
-                        <h3 class="project-title">E-Commerce Platform</h3>
-                        <p class="project-description">A complete e-commerce solution with React frontend, Node.js
-                            backend, and MongoDB database.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">Redux</span>
-                        </div>
-                    </div>
-                </div>
+            <div id="projects-grid-container" class="projects-grid">
 
-                <!-- Project 2 -->
-                <div class="project-card" data-categories="frontend,react">
-                    <div class="project-image">
-                        <img src="https://uihut-data.fra1.cdn.digitaloceanspaces.com/design/web-app/pack/preview/1751269731075-Task%20Management%20Web%20App%20UI%20Kit.png"
-                            alt="Task Management App">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link" aria-label="View Task Management App">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <line x1="12" y1="8" x2="12" y2="16"></line>
-                                    <line x1="8" y1="12" x2="16" y2="12"></line>
-                                </svg>
-                            </a>
-                            <a href="#" class="project-link" aria-label="GitHub Repository">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path
-                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                    </path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">Frontend</span>
-                            <span class="project-date">2023</span>
-                        </div>
-                        <h3 class="project-title">Task Management App</h3>
-                        <p class="project-description">A productivity application built with React and Firebase for
-                            real-time task management.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">Material UI</span>
-                            <span class="tech-tag">Context API</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card" data-categories="backend,node">
-                    <div class="project-image">
-                        <img src="https://dz2cdn1.dzone.com/storage/temp/4801566-infographic-3.png"
-                            alt="REST API Service">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link" aria-label="View API Documentation">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <line x1="12" y1="8" x2="12" y2="16"></line>
-                                    <line x1="8" y1="12" x2="16" y2="12"></line>
-                                </svg>
-                            </a>
-                            <a href="#" class="project-link" aria-label="GitHub Repository">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path
-                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                    </path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">Backend</span>
-                            <span class="project-date">2022</span>
-                        </div>
-                        <h3 class="project-title">REST API Service</h3>
-                        <p class="project-description">A scalable backend service with JWT authentication, rate
-                            limiting, and comprehensive documentation.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Express</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">JWT</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card" data-categories="mobile,react">
-                    <div class="project-image">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8mDhD0YPv1JO7yIGwTSXVGcrG39OkjlR2yw&s"
-                            alt="Fitness Tracker">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link" aria-label="View Fitness Tracker App">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <line x1="12" y1="8" x2="12" y2="16"></line>
-                                    <line x1="8" y1="12" x2="16" y2="12"></line>
-                                </svg>
-                            </a>
-                            <a href="#" class="project-link" aria-label="GitHub Repository">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path
-                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                    </path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">Mobile</span>
-                            <span class="project-date">2022</span>
-                        </div>
-                        <h3 class="project-title">Fitness Tracker</h3>
-                        <p class="project-description">A cross-platform mobile application for tracking workouts and
-                            nutrition built with React Native.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React Native</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">Redux</span>
-                            <span class="tech-tag">Expo</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="project-card" data-categories="fullstack,vue">
-                    <div class="project-image">
-                        <img src="https://improvado.io/5a1eb87c9afe1000014a4c7d/66a8b58c15eda4974960a4ba_63ce93686746b49dcd60cd9f_vis-1%2520(1).png"
-                            alt="Analytics Dashboard">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link" aria-label="View Analytics Dashboard">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <line x1="12" y1="8" x2="12" y2="16"></line>
-                                    <line x1="8" y1="12" x2="16" y2="12"></line>
-                                </svg>
-                            </a>
-                            <a href="#" class="project-link" aria-label="GitHub Repository">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path
-                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                    </path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">Full Stack</span>
-                            <span class="project-date">2021</span>
-                        </div>
-                        <h3 class="project-title">Analytics Dashboard</h3>
-                        <p class="project-description">A data visualization platform with Vue.js frontend and Python
-                            backend for processing large datasets.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">D3.js</span>
-                            <span class="tech-tag">Flask</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="project-card" data-categories="frontend,design">
-                    <div class="project-image">
-                        <img src="https://s3-alpha.figma.com/hub/file/2532085184/a2c4d747-4bfc-4bbd-9735-bf880b4573b4-cover.png"
-                            alt="Portfolio Template">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link" aria-label="View Portfolio Template">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <line x1="12" y1="8" x2="12" y2="16"></line>
-                                    <line x1="8" y1="12" x2="16" y2="12"></line>
-                                </svg>
-                            </a>
-                            <a href="#" class="project-link" aria-label="GitHub Repository">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path
-                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                    </path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">Frontend</span>
-                            <span class="project-date">2021</span>
-                        </div>
-                        <h3 class="project-title">Portfolio Template</h3>
-                        <p class="project-description">A responsive portfolio template with modern animations and clean
-                            design built with GSAP and CSS Grid.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">GSAP</span>
-                        </div>
-                    </div>
-                </div>
             </div>
 
             <div class="projects-cta">
@@ -670,20 +426,8 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <!-- <section id="contact" class="contact">
-        <h2>Get In Touch</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-        <div class="social-links">
 
-        </div>
-    </section> -->
-    <!-- Contact Section -->
+
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title"><span class="section-number">05.</span> Get In Touch</h2>
@@ -768,6 +512,8 @@
             </div>
         </div>
     </section>
+    <!-- scroll top button -->
+
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container container">
@@ -841,9 +587,9 @@
 
                     <div class="footer-column">
                         <h4 class="footer-title">Contact</h4>
-                        <ul class="footer-contact">
+                        <ul class="footer-social">
                             <li>
-                                <a href="mailto:hello@example.com" class="contact-link">
+                                <a href="mailto:mahmoud.mo.farrag@gmail.com" class="contact-link">
                                     <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
@@ -852,7 +598,7 @@
                                         </path>
                                         <polyline points="22,6 12,13 2,6"></polyline>
                                     </svg>
-                                    <span>hello@example.com</span>
+                                    <span>Gmail</span>
                                 </a>
                             </li>
                         </ul>
@@ -868,7 +614,7 @@
     </footer>
 
     <!-- Scripts -->
-<script type="module" src="/main.js"></script>
+    <script type="module" src="/js/main.js"></script>
 </body>
 
 </html>

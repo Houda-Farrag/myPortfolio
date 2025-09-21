@@ -20,6 +20,8 @@ body {
   /* background-color: #fff; */
   background-color: var(--primary-color);
   /* padding-top: 5%; Add padding equal to navbar height */
+  scroll-behavior: smooth;
+  position: relative;
 }
 
 /* Typography */
@@ -40,6 +42,32 @@ h4 {
   /* padding: 2rem 0; */
 }
 
+/* go to top button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--primary-color);
+  color: var(--lightest-color);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  transition: all 0.3s ease;
+  padding: 5px;
+}
+
+.scroll-to-top:hover {
+  background-color: var(--dark-color);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 /* Header & Navigation */
 /* ===== NAVIGATION ===== */
 .header {
@@ -48,7 +76,7 @@ h4 {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 999;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
   background-color: rgba(10, 25, 47, 0.85);
@@ -198,6 +226,40 @@ h4 {
   display: none;
 }
 
+.mobile-backdrop.active {
+  display: block;
+}
+
+.nav-menu-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  /* display: ; */
+}
+
+.nav-menu-list {
+  position: relative;
+  z-index: 1000;
+  list-style: none;
+  
+}
+
+.nav-menu-item {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+.nav-menu-link {
+  color: var(--light-color);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
 @media (max-width: 768px) {
   .mobile-backdrop {
     display: block;
@@ -328,8 +390,8 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 75% 50%,
-      rgba(100, 255, 218, 0.1) 0%,
+  background: radial-gradient(circle at 70% 50% ,
+      rgba(100, 255, 219, 0) 0%,
       transparent 50%),
     url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><rect fill="%2323446e" width="100" height="100"/><path fill="none" stroke="%231b2a4a" stroke-width="0.5" d="M0,0 L100,100 M100,0 L0,100"/></svg>');
   background-size: cover;
@@ -378,12 +440,16 @@ section {
   border-right: 5px solid transparent;
   padding-right: 5px;
   overflow: hidden;
-  animation: typing 2s steps(14)  , cursor 1s step-end infinite;
+  animation: cursor 1s step-end infinite, typing 3s steps(14) forwards;
 }
 
 @keyframes typing {
   from {
     width: 0;
+  }
+
+  to {
+    width: 100%;
   }
 
 }
@@ -1257,10 +1323,18 @@ section {
   .project-filters {
     justify-content: flex-start;
   }
-
   .project-image {
     height: 180px;
   }
+}
+
+.no-projects{
+  text-align: center;
+  margin-top: 3rem;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  font-family: var(--font-mono);
+  width: 100%;
 }
 
 /* ===== CONTACT SECTION ===== */
@@ -1617,6 +1691,7 @@ section {
   transform: translateY(-2px);
 }
 
+
 .footer-bottom {
   display: flex;
   flex-direction: column;
@@ -1663,3 +1738,4 @@ section {
     margin: 0 auto;
   }
 }
+
